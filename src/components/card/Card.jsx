@@ -5,10 +5,7 @@ export default function Card({ item }) {
   return (
     <div className="card">
       <Link to={`/${item.id}`} className="imageContainer">
-        <img
-          src="https://www.pexels.com/photo/sheep-on-a-hillside-at-sunset-19845821/"
-          alt=""
-        />
+        <img src={item.images} alt="" />
       </Link>
       <div className="textContainer">
         <h2 className="title">
